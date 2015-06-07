@@ -1,0 +1,15 @@
+/*
+Theme Name: Holly's Blank Theme
+Theme URI: URL for FirstName Blank
+Author: Holly Negley
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: Holly_Negley_Blank_Template
+*/
+
+*{
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+}
