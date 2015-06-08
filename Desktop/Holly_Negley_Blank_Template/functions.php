@@ -9,8 +9,8 @@ function blank_widgets_init() {
         'description' => 'Widget for our sidebar on pages', 
         'before_widget' => '<div class="widget-sidebar">', 
         'after_widget' => '</div>',
-        'before_title' => '<h5>',
-        'after_title' => '</h5>'                        
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'                        
         ));
 
 /*---First New Widget---*/
@@ -21,8 +21,8 @@ function blank_widgets_init() {
         'description' => 'First widget for our footer', 
         'before_widget' => '<div class="widget-footer">', 
         'after_widget' => '</div>',
-        'before_title' => '<h5>',
-        'after_title' => '</h5>'
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
         ));                   
 
 /*---Second New Widget---*/
@@ -33,8 +33,8 @@ function blank_widgets_init() {
         'description' => 'Second widget for our footer', 
         'before_widget' => '<div class="widget-footer">', 
         'after_widget' => '</div>',
-        'before_title' => '<h5>',
-        'after_title' => '</h5>'
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
         ));  
 
 /*---Third New Widget---*/
@@ -45,8 +45,8 @@ function blank_widgets_init() {
         'description' => 'Third widget for our footer', 
         'before_widget' => '<div class="widget-footer">', 
         'after_widget' => '</div>',
-        'before_title' => '<h5>',
-        'after_title' => '</h5>'
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
         ));                 
 
     }
@@ -55,6 +55,10 @@ add_action('widgets_init', 'blank_widgets_init');
 /*-------------- Enable Menu --------------- */
 
 add_theme_support('menus');
+
+/*-------------- Enable Featured Images --------------- */
+
+add_theme_support('post-thumbnails');
 
 
 

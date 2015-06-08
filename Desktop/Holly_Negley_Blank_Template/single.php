@@ -9,7 +9,10 @@
                 		/* OUR DATA CONTEXT IS DEFINED  */              
                 		while (have_posts()) : the_post(); ?> 
                     
-                    	<h2><?php the_title(); ?></h2>
+                    <div class="post-thumbnail">
+                        <?php the_post_thumbnail('medium'); ?>
+                    </div>
+                    <h2><?php the_title(); ?></h2>
                     
                     	<?php the_content();
 
