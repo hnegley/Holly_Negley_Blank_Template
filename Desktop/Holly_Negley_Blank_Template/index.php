@@ -1,34 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
+<?php get_header(); ?>
 
-	<!-- Links to our Style.css file -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<section class="row">
+    	<div class="twelve columns">
+    		<!-- BEGIN LOOP -->
+            	<?php 
+            	if ( have_posts() ) {
+                	while ( have_posts() ) {
+                    	the_post(); ?>
+                    	<h3><?php the_title(); ?></h3>
+                    	<?php the_content(); 
+                	} // end while
+            	} // end if
+            	?>
+			<!-- END LOOP -->
+    	</div>
+    </section>
 
-</head>
-<body>
-	<div class="container">
-		
-		<header class="row">
-			<div class="twelve columns">
-    			<h1>Blank WordPress Template</h1>
-    			<p>This is my WordPress template.</p>
-    		</div>	
-    	</header>
-    	
-    	<section class="row">
-    		<div class="twelve columns">
-    			<p>Body content goes here.</p>
-    		</div>
-    	</section>
-    	
-    	<footer class="row">
-    		<div class="twelve columns">
-    			<P>Footer content goese here.</P>
-    		</div>	
-    	</footer>
-    	
-    </div> <!--ends container-->		
-</body>
-</html>
+<?php get_footer(); ?>
