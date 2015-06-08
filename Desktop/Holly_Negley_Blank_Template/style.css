@@ -8,6 +8,9 @@ License: Open
 Text Domain: Holly_Negley_Blank_Template
 */
 
+@import url("css/skeleton.css");
+@import url("css/normalize.css");
+
 *{
     color: #000000;
     font-size: 14px;
